@@ -1,0 +1,13 @@
+# Training Interface
+st.markdown("---")
+st.header("📚 Train Your Assistant")
+
+uploaded_file = st.file_uploader("Upload training data (JSON or CSV)", type=["json", "csv"])
+if uploaded_file:
+    st.success("✅ Training data uploaded successfully!")
+    st.write("You can now use this data to fine-tune your model with QLoRA or Axolotl.")
+    with open("training_data/" + uploaded_file.name, "wb") as f:
+        f.write(uploaded_file.getbuffer())
+    st.write("Saved to: training_data/" + uploaded_file.name)
+
+https://copilot.microsoft.com/conversations/join/dvSQQ79gXFAiJK11862F2

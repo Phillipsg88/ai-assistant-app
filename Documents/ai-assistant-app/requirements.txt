@@ -1,0 +1,8 @@
+streamlit
+transformers
+torchaudio
+openai-whisper
+faiss-cpu
+langchain
+Pillow
+sentence-transformers
