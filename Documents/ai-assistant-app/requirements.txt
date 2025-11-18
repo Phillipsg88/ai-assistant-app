@@ -5,4 +5,5 @@ openai-whisper
 faiss-cpu
 langchain
 Pillow
+datasets
 sentence-transformers
