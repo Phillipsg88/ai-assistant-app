@@ -1,5 +1,5 @@
 # Install required packages:
-# pip install streamlit transformers torchaudio openai-whisper faiss-cpu langchain Pillow datasets peft accelerate torch langchain-community
+# pip install streamlit transformers torchaudio openai-whisper faiss-cpu --upgrade langchain Pillow datasets peft accelerate torch langchain-community
 
 import streamlit as st
 from transformers import pipeline, AutoTokenizer, AutoModelForCausalLM, TrainingArguments, Trainer
