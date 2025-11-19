@@ -11,7 +11,7 @@ from datasets import load_dataset
 from peft import LoraConfig, get_peft_model
 from langchain_community.vectorstores import FAISS
 from langchain_community.embeddings import HuggingFaceEmbeddings
-from langchain.memory import VectorStoreRetrieverMemory
+from langchain_community.memory import VectorStoreRetrieverMemory
 from langchain.llms import HuggingFacePipeline
 from langchain.chains.router import MultiPromptChain
 
