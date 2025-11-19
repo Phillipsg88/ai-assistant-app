@@ -1,5 +1,5 @@
 # Install required packages:
-# pip install streamlit transformers torchaudio openai-whisper faiss-cpu langchain Pillow datasets peft accelerate torch
+# pip install streamlit transformers torchaudio openai-whisper faiss-cpu langchain Pillow datasets peft accelerate torch langchain-community
 
 import streamlit as st
 from transformers import pipeline, AutoTokenizer, AutoModelForCausalLM, TrainingArguments, Trainer
@@ -9,7 +9,7 @@ import faiss
 import os
 from datasets import load_dataset
 from peft import LoraConfig, get_peft_model
-from langchain.vectorstores import FAISS
+from langchain_community.vectorstores import FAISS
 from langchain.embeddings import HuggingFaceEmbeddings
 from langchain.memory import VectorStoreRetrieverMemory
 from langchain.llms import HuggingFacePipeline
