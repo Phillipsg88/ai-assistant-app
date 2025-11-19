@@ -12,3 +12,4 @@ peft>=0.7.0
 accelerate>=0.33.0
 requests
 huggingface_hub
+langchain-community
