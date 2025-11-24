@@ -37,7 +37,7 @@ memory = VectorStoreRetrieverMemory(retriever=memory_store.as_retriever())
 # Personalization profile
 # -----------------------------
 user_profile = {
-    "name": "Phillips",
+    "name": "Human User",
     "preferred_language": "Python",
     "tone": "professional",
     "interests": ["AI", "ICT", "coding"]
