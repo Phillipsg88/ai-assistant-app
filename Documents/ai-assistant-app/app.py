@@ -1,15 +1,14 @@
 # Install required packages:
 # pip install streamlit transformers torchaudio openai-whisper faiss-cpu --upgrade langchain Pillow datasets peft accelerate torch langchain-community
 
-imimport os
+import os
 import streamlit as st
 from PIL import Image
 
-# Hugging Face ML / Training Ecosystem
+# Hugging Face ML Ecosystem (Handles Text, Images, AND Audio!)
 from transformers import pipeline, AutoTokenizer, AutoModelForCausalLM, TrainingArguments, Trainer
 from datasets import load_dataset
 from peft import LoraConfig, get_peft_model
-import whisper
 
 # Vector Search
 import faiss
@@ -19,6 +18,7 @@ from langchain_community.vectorstores import FAISS
 from langchain_huggingface import HuggingFaceEmbeddings, HuggingFacePipeline
 from langchain.memory import VectorStoreRetrieverMemory
 from langchain.chains.router import MultiPromptChain
+
 
 
 # -----------------------------
